@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:id="@+id/paheLayout"
+    tools:context=".MainActivity">
+    
+    <Switch
+        android:id="@+id/pageColorSwitch"
+        android:text="Rengi Değiştir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></Switch>
+    <EditText
+        android:id="@+id/etName"
+        android:layout_marginTop="70dp"
+        android:hint="Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></EditText>
+    <EditText
+        android:id="@+id/etProfession"
+        android:hint="profession"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></EditText>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_gravity="center"
+            android:onClick="saveAccountData"
+            android:text="kaydet"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"></Button>
+        <Button
+            android:layout_gravity="center"
+            android:onClick="loadAccoundData"
+            android:text="Getir"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"></Button>
+
+    </LinearLayout>
+
+    <Button
+        android:onClick="newActivity"
+        android:text="İkinci Aktivite'ye git"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></Button>
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="Name: "
+        android:textColor="#969494"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+    <TextView
+        android:id="@+id/tvProfession"
+        android:layout_gravity="center"
+        android:text="Profession: "
+        android:textColor="#969494"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+    <TextView
+        android:id="@+id/tvId"
+        android:layout_gravity="center"
+        android:text="Id: "
+        android:textColor="#969494"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+
+</LinearLayout>
